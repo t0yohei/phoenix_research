@@ -19,7 +19,7 @@ defmodule Phoenixapp.Router do
     get "/", PageController, :index
     # "GET /hello"にアクセスすると、HelloControllerのindexアクションが呼ばれる
     get "/hello", HelloController, :index
-    
+    resources "/users", UserController
   end
 
   # Other scopes may use custom stacks.
